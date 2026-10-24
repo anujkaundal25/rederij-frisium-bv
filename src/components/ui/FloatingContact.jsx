@@ -1,14 +1,15 @@
-import React from 'react'
-import { FaWhatsapp } from 'react-icons/fa'
-import { FiMail } from 'react-icons/fi'
+'use client'
+
+import React, { useState, useEffect } from 'react'
+import { FiMail, FiPhone, FiArrowUp } from 'react-icons/fi'
 
 const contacts = [
   {
-    label: 'WhatsApp us',
-    href: 'https://wa.me/919362839070',
-    icon: FaWhatsapp,
-    className: 'bg-[#25d366] hover:bg-[#1fb95a]',
-    external: true,
+    label: 'Call us',
+    href: 'tel:+919362839070',
+    icon: FiPhone,
+    className: 'bg-[#071f38] hover:bg-[#071f38]',
+    external: false,
   },
   {
     label: 'Email us',
@@ -20,8 +21,43 @@ const contacts = [
 ]
 
 function FloatingContact() {
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const checkScrollPosition = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true)
+      } else {
+        setShowScrollTop(false)
+      }
+    }
+
+    window.addEventListener('scroll', checkScrollPosition)
+    return () => window.removeEventListener('scroll', checkScrollPosition)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return (
     <div className="fixed bottom-5 right-4 z-[80] flex flex-col items-end gap-3 sm:bottom-7 sm:right-6">
+      {/* Scroll to top button - Fixed icon-only layout without hover expand */}
+      {showScrollTop && (
+        <button
+          type="button"
+          onClick={scrollToTop}
+          aria-label="Back to top"
+          className="grid h-12 w-12 place-items-center rounded-full bg-[#071f38] text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 hover:bg-[#0c2f54] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 cursor-pointer"
+        >
+          <FiArrowUp className="text-2xl sm:text-[26px]" aria-hidden="true" />
+        </button>
+      )}
+
+      {/* Contact buttons (expandable on hover) */}
       {contacts.map((contact) => {
         const Icon = contact.icon
 
@@ -34,7 +70,7 @@ function FloatingContact() {
             rel={contact.external ? 'noreferrer' : undefined}
             className={`group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 ease-out hover:w-44 focus-visible:w-44 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 ${contact.className}`}
           >
-            <span className="w-0 overflow-hidden whitespace-nowrap text-sm font-semibold opacity-0 transition-all duration-300 group-hover:mr-3 group-hover:w-auto group-hover:opacity-100 group-focus-visible:mr-3 group-focus-visible:w-auto group-focus-visible:opacity-100">
+            <span className="w-0 overflow-hidden whitespace-nowrap text-sm font-semibold opacity-0 transition-all duration-300 group-hover:mr-3 group-hover:w-auto group-hover:opacity-100 group-focus-visible:mr-3 group-focus-visible:w-auto group-focus-visible:opacity-100 cursor-pointer">
               {contact.label}
             </span>
             <span className="grid h-12 w-12 shrink-0 place-items-center sm:h-14 sm:w-14">

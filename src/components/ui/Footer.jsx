@@ -39,7 +39,7 @@ function Footer() {
           <div>
             <a href="/" className="inline-flex items-center gap-3" aria-label="Rederij Frisium home">
               <span className="text-xl font-black leading-tight tracking-[0.08em] sm:text-2xl">
-                Rederij Frisium
+                Rederij Frisium B.V
                 <span className="mt-1 block text-[10px] font-medium tracking-[0.24em] text-white/70">
                   Trucking Transportation
                 </span>
