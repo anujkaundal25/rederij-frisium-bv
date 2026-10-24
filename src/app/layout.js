@@ -11,11 +11,6 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: "Rederij Frisium B.V",
   description: "Trucking Transportation business",
-  icons: {
-    icon: "/fav-icon.png",
-    shortcut: "/fav-icon.png",
-    apple: "/fav-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {
