@@ -8,19 +8,19 @@ import {
 } from 'react-icons/fi'
 
 const serviceLinks = [
-  { label: 'Full Truckload', href: '#services' },
-  { label: 'Less-than-Truckload', href: '#services' },
-  { label: 'Regional Delivery', href: '#services' },
-  { label: 'Dry Van Transport', href: '#transport-types' },
-  { label: 'Refrigerated Transport', href: '#transport-types' },
+  { label: 'Full Truckload', href: '/services' },
+  { label: 'Less-than-Truckload', href: '/services' },
+  { label: 'Regional Delivery', href: '/services' },
+  { label: 'Dry Van Transport', href: '/transport-types' },
+  { label: 'Refrigerated Transport', href: '/transport-types' },
 ]
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Our Process', href: '#process' },
-  { label: 'Why Choose Us', href: '#why-us' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Our Process', href: '/process' },
+  { label: 'Why Choose Us', href: '/why-us' },
 ]
 
 function Footer() {
@@ -36,9 +36,6 @@ function Footer() {
         <div className="grid gap-10 pb-10 md:grid-cols-2 lg:grid-cols-[1.2fr_0.9fr_0.75fr_1.1fr] lg:gap-12">
           <div>
             <a href="/" className="inline-flex items-center gap-3" aria-label="Rederij Frisium home">
-              <span className="grid h-12 w-12 place-items-center rounded-full bg-orange-500 text-white">
-                <FiTruck className="text-2xl" aria-hidden="true" />
-              </span>
               <span className="text-xl font-black uppercase leading-tight tracking-[0.08em] sm:text-2xl">
                 Rederij Frisium
                 <span className="mt-1 block text-[10px] font-medium tracking-[0.24em] text-white/70">
@@ -95,7 +92,7 @@ function Footer() {
               for your shipment.
             </p>
             <a
-              href="#services"
+              href="/services"
               className="mt-6 inline-flex items-center gap-3 rounded-full bg-orange-500 py-2 pl-5 pr-2 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
             >
               Explore Services
@@ -133,7 +130,7 @@ function Footer() {
 
         <div className="flex flex-col gap-3 border-t border-white/15 pt-5 text-sm text-white/65 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Rederij Frisium B.V. All rights reserved.</p>
-          <a href="#top" className="transition-colors hover:text-orange-400">
+          <a href="/#top" className="transition-colors hover:text-orange-400">
             Back to top
           </a>
         </div>

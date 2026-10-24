@@ -63,12 +63,12 @@ function WhyUs() {
           <div className="relative grid gap-4 sm:grid-cols-2">
             
             {/* Background Image Centered Behind Cards */}
-            <img
+            {/* <img
               src="/why.webp"
               alt=""
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-1/2 z-0 w-[min(95%,650px)] -translate-x-1/2 -translate-y-1/2 object-contain opacity-90"
-            />
+            /> */}
 
             {/* Feature Cards */}
             {advantages.map((advantage, index) => {

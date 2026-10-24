@@ -25,11 +25,11 @@ function Cta() {
 
   return (
     <section id="quote"
-      className="relative w-full min-h-[650px] bg-cover bg-center bg-no-repeat py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative w-full min-h-[650px] bg-cover bg-center bg-no-repeat py-16 px-4 sm:px-6 lg:px-8 overflow-hidden mb-10"
       style={{ backgroundImage: "url('/cta.webp')" }}
     >
       {/* Background Gradient Overlay using #071f38 */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#071f38]/95 via-[#071f38]/80 to-black/60 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#071f38]/95 via-[#071f38]/20 to-black/0 z-0" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
@@ -159,46 +159,6 @@ function Cta() {
               <FiSend className="text-base" />
             </button>
           </form>
-        </div>
-
-        {/* Right Column: Information & Callouts */}
-        <div className="lg:col-span-6 text-white space-y-8">
-          <div>
-            <span className="inline-block text-orange-400 font-semibold text-xs sm:text-sm tracking-widest uppercase mb-2">
-              Ready to Move Your Freight?
-            </span>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase leading-tight tracking-tight">
-              Nationwide Logistics <br />
-              <span className="text-orange-500">Fast, Safe & On Time</span>
-            </h2>
-            <p className="mt-4 text-slate-200 text-sm sm:text-base leading-relaxed max-w-xl">
-              Whether you need single load transport or regular fleet dispatching, our team ensures your freight moves safely and efficiently across every highway.
-            </p>
-          </div>
-
-          {/* Feature Highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-white/10 rounded-xl border border-white/20 shrink-0">
-                <FiPhoneCall className="text-2xl text-orange-400" />
-              </div>
-              <div>
-                <h4 className="font-bold text-lg">24/7 Dispatch Support</h4>
-                <p className="text-xs text-slate-300 mt-1">Direct contact with our logistics team at any hour.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="p-3 bg-white/10 rounded-xl border border-white/20 shrink-0">
-                <FiShield className="text-2xl text-orange-400" />
-              </div>
-              <div>
-                <h4 className="font-bold text-lg">Fully Insured Fleet</h4>
-                <p className="text-xs text-slate-300 mt-1">Complete cargo protection and peace of mind guarantee.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
 
       </div>

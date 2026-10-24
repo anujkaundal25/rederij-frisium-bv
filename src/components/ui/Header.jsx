@@ -4,12 +4,10 @@ import React, { useState } from 'react'
 import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi'
 
 const menu = [
-  { label: 'Home', url: '#top' },
-  { label: 'About', url: '#about' },
-  { label: 'Services', url: '#services' },
-  { label: 'Our Process', url: '#process' },
-  { label: 'Transport Types', url: '#transport-types' },
-  { label: 'Why Choose Us', url: '#why-us' },
+  { label: 'Home', url: '/' },
+  { label: 'About', url: '/about' },
+  { label: 'Services', url: '/services' },
+  { label: 'Our Process', url: '/process' },
 ]
 
 function Header() {
@@ -21,7 +19,7 @@ function Header() {
     <header className="absolute inset-x-0 top-0 z-50 w-full px-4 sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-3 pt-4 sm:pt-5">
         <a
-          href="#top"
+          href="/"
           className="flex min-w-0 flex-col justify-center leading-none text-white"
           onClick={closeMenu}
         >
@@ -47,10 +45,10 @@ function Header() {
             </a>
           ))}
           <a
-            href="#quote"
+            href="/contact"
             className="inline-flex whitespace-nowrap rounded-full bg-[#071f38] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-[#0b2d52]"
           >
-            Get a Quote
+            Contact Us
           </a>
         </nav>
 
@@ -120,11 +118,11 @@ function Header() {
         </div>
 
         <a
-          href="#quote"
+          href="/contact"
           onClick={closeMenu}
           className="mt-auto inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-4 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-orange-600"
         >
-          Request a Quote
+          Contact Us
         </a>
       </nav>
     </header>
