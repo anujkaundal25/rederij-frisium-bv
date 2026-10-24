@@ -41,7 +41,7 @@ const steps = [
 
 function Process() {
   return (
-    <section id="process" className="bg-white px-4 py-16 text-slate-900 sm:px-6 lg:px-8 lg:py-24">
+    <section id="process" className="bg-white px-4 py-16 text-slate-900 sm:px-8 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
@@ -71,7 +71,7 @@ function Process() {
                 Let&apos;s find the right trucking solution for your business.
               </p>
               <a
-                href="#services"
+                href="/services"
                 className="mt-6 inline-flex items-center gap-3 rounded-full bg-[#071f38] px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/60 transition-colors hover:bg-[#0b2d52]"
               >
                 <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38]">

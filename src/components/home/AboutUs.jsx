@@ -10,7 +10,7 @@ const features = [
 
 function AboutUs() {
   return (
-    <section id="about" className="bg-white px-4 py-16 text-slate-900 sm:px-6 lg:px-15 lg:py-24">
+    <section id="about" className="bg-white px-4 py-16 text-slate-900 sm:px-8 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1500px]">
         <div className="mb-10 max-w-3xl sm:mb-12">
           <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-[#071f38]">

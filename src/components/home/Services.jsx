@@ -31,7 +31,7 @@ const services = [
 
 function Services() {
   return (
-    <section id="services" className="bg-white px-4 py-16 text-slate-900 sm:px-6 lg:px-8 lg:py-24">
+    <section id="services" className="bg-white px-4 py-16 text-slate-900 sm:px-8 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">

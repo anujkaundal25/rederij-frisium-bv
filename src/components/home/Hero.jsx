@@ -10,13 +10,13 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#071f38]/95 via-[#071f38]/70 to-[#071f38]/20" />
 
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1500px] items-center px-4 pb-12 pt-28 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-[1500px] items-center px-4 pb-12 pt-28 sm:px-8 lg:px-20">
         <div className="max-w-[760px]">
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-[#f3c969] md:text-base">
+          <p className="mb-5 text-sm font-semibold tracking-[0.18em] text-[#f3c969] md:text-base">
             Keeping America&rsquo;s Freight Moving, One Mile at a Time.
           </p>
 
-          <h1 className="text-4xl font-black uppercase leading-[0.9] tracking-[-0.04em] text-white md:text-6xl lg:text-[3rem]">
+          <h1 className="text-4xl font-black leading-[0.9] tracking-[-0.04em] text-white md:text-6xl lg:text-[3rem]">
             Reliable Trucking &amp; Transportation Across the USA
           </h1>
 
@@ -28,13 +28,13 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <button
-              type="button"
-              className="flex items-center gap-2 rounded-lg bg-[#071f38] px-8 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white shadow-xl transition-all duration-300 hover:scale-105 border border-white cursor-pointer"
+            <a
+              href="/#quote"
+              className="flex items-center gap-2 rounded-lg bg-[#071f38] px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-xl transition-all duration-300 hover:scale-105 border border-white cursor-pointer"
             >
               <span>Get a Quote</span>
               <FiChevronsRight className="text-lg" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

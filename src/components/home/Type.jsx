@@ -36,7 +36,7 @@ function Type() {
   return (
     <section
       id="transport-types"
-      className="overflow-hidden bg-white px-4 py-16 text-[#071f38] sm:px-6 lg:px-8 lg:py-24"
+      className="overflow-hidden bg-white px-4 py-16 text-[#071f38] sm:px-8 lg:px-20 lg:py-24"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Section Header */}
@@ -45,7 +45,7 @@ function Type() {
             <FiTruck aria-hidden="true" />
             <span>Transport Types</span>
           </div>
-          <h2 className="text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
+          <h2 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
             The Right Truck
             <br />
             For Every Freight Need
@@ -82,7 +82,7 @@ function Type() {
                     </h3>
                   </div>
 
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-300 mb-4">
+                  <p className="text-xs font-semibold tracking-[0.2em] text-slate-300 mb-4">
                     {type.tagline}
                   </p>
 
@@ -92,8 +92,8 @@ function Type() {
 
                   <div>
                     <a
-                      href="#services"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition-all hover:bg-white hover:text-[#071f38]"
+                      href="/services"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-xs font-bold tracking-wider text-white transition-all hover:bg-white hover:text-[#071f38]"
                     >
                       <span>Explore Services</span>
                       <FiArrowUpRight className="text-sm" aria-hidden="true" />

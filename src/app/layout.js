@@ -1,5 +1,6 @@
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import FloatingContact from "@/components/ui/FloatingContact";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -10,6 +11,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata = {
   title: "Rederij Frisium B.V",
   description: "Trucking Transportation business",
+  icons: {
+    icon: "/fav-icon.png",
+    shortcut: "/fav-icon.png",
+    apple: "/fav-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -18,7 +24,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <FloatingContact />
+      </body>
     </html>
   );
 }

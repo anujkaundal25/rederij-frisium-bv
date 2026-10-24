@@ -8,6 +8,8 @@ const menu = [
   { label: 'About', url: '/about' },
   { label: 'Services', url: '/services' },
   { label: 'Our Process', url: '/process' },
+  { label: 'Transport Types', url: '/#transport-types' },
+  { label: 'Why Choose Us', url: '/#why-us' },
 ]
 
 function Header() {
@@ -16,17 +18,17 @@ function Header() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 w-full px-4 sm:px-6 lg:px-8">
+    <header className="absolute inset-x-0 top-0 z-50 w-full px-4 sm:px-8 lg:px-20">
       <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-3 pt-4 sm:pt-5">
         <a
           href="/"
           className="flex min-w-0 flex-col justify-center leading-none text-white"
           onClick={closeMenu}
         >
-          <span className="truncate text-base font-black uppercase tracking-[0.06em] sm:text-xl md:text-2xl">
-            REDERIJ FRISIUM B.V
+          <span className="truncate text-base font-black tracking-[0.06em] sm:text-xl md:text-2xl">
+            Rederij Frisium B.V.
           </span>
-          <span className="mt-1 text-[9px] font-medium uppercase tracking-[0.2em] text-gray-200 sm:text-[10px] md:text-[11px]">
+          <span className="mt-1 text-[9px] font-medium tracking-[0.2em] text-gray-200 sm:text-[10px] md:text-[11px]">
             Trucking Transportation
           </span>
         </a>
@@ -46,7 +48,7 @@ function Header() {
           ))}
           <a
             href="/contact"
-            className="inline-flex whitespace-nowrap rounded-full bg-[#071f38] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-[#0b2d52]"
+            className="inline-flex whitespace-nowrap rounded-full bg-white px-5 py-3 text-[10px] font-bold tracking-[0.15em] text-[#071f38] transition-colors"
           >
             Contact Us
           </a>
@@ -85,10 +87,10 @@ function Header() {
       >
         <div className="mb-10 flex items-center justify-between gap-4 border-b border-white/15 pb-5">
           <div className="min-w-0">
-            <p className="truncate text-lg font-black uppercase tracking-wider">
-              REDERIJ FRISIUM B.V
+            <p className="truncate text-lg font-black tracking-wider">
+              Rederij Frisium B.V.
             </p>
-            <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-white/65">
+            <p className="mt-1 text-[10px] tracking-[0.2em] text-white/65">
               Trucking Transportation
             </p>
           </div>
@@ -120,7 +122,7 @@ function Header() {
         <a
           href="/contact"
           onClick={closeMenu}
-          className="mt-auto inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-4 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-orange-600"
+          className="mt-auto inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-4 text-sm font-bold tracking-wider transition-colors hover:bg-orange-600"
         >
           Contact Us
         </a>

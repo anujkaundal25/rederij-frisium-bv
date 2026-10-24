@@ -32,7 +32,7 @@ const advantages = [
 
 function WhyUs() {
   return (
-    <section id="why-us" className="relative isolate overflow-hidden bg-white px-4 py-12 text-[#071f38] sm:px-6 lg:px-8 lg:py-24">
+    <section id="why-us" className="relative isolate overflow-hidden bg-white px-4 py-12 text-[#071f38] sm:px-8 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1400px]">
         <div className="relative grid gap-10 lg:min-h-[610px] lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-12">
           
@@ -43,7 +43,7 @@ function WhyUs() {
               <span>Why Choose Us</span>
             </div>
             
-            <h2 className="max-w-xl text-3xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="max-w-xl text-3xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               Your Cargo,
               <br />
               Handled With

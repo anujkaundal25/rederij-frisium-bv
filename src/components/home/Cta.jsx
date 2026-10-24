@@ -25,7 +25,7 @@ function Cta() {
 
   return (
     <section id="quote"
-      className="relative w-full min-h-[650px] bg-cover bg-center bg-no-repeat py-16 px-4 sm:px-6 lg:px-8 overflow-hidden mb-10"
+      className="relative w-full min-h-[650px] bg-cover bg-center bg-no-repeat py-16 px-4 sm:px-8 lg:px-20 overflow-hidden mb-10"
       style={{ backgroundImage: "url('/cta.webp')" }}
     >
       {/* Background Gradient Overlay using #071f38 */}
@@ -36,7 +36,7 @@ function Cta() {
         {/* Left Column: Form Box Container */}
         <div className="lg:col-span-6 bg-white/95 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20">
           <div className="mb-6">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-500 mb-2">
+            <div className="flex items-center gap-2 text-xs font-bold tracking-wider text-orange-500 mb-2">
               <FiTruck className="text-base" />
               <span>Instant Freight Quote</span>
             </div>
@@ -52,7 +52,7 @@ function Cta() {
             {/* Full Name & Email */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Full Name *
                 </label>
                 <input
@@ -67,7 +67,7 @@ function Cta() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Email Address *
                 </label>
                 <input
@@ -85,7 +85,7 @@ function Cta() {
             {/* Phone & Freight Type */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Phone Number *
                 </label>
                 <input
@@ -100,7 +100,7 @@ function Cta() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Freight Type
                 </label>
                 <select
@@ -120,7 +120,7 @@ function Cta() {
             {/* Pickup & Drop-off Location */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Pickup City / ZIP *
                 </label>
                 <input
@@ -135,7 +135,7 @@ function Cta() {
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#071f38] uppercase mb-1">
+                <label className="block text-xs font-semibold text-[#071f38] mb-1">
                   Delivery City / ZIP *
                 </label>
                 <input
@@ -153,7 +153,7 @@ function Cta() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-[#071f38] hover:bg-[#0b2d52] text-white font-bold text-sm uppercase tracking-wider py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl mt-2"
+              className="w-full bg-[#071f38] hover:bg-[#0b2d52] text-white font-bold text-sm tracking-wider py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl mt-2"
             >
               <span>Submit Quote Request</span>
               <FiSend className="text-base" />
