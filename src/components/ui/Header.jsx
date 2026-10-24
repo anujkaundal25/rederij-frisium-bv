@@ -1,65 +1,132 @@
-import React from 'react'
-import { FiChevronDown, FiSearch } from 'react-icons/fi'
+'use client'
+
+import React, { useState } from 'react'
+import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi'
+
+const menu = [
+  { label: 'Home', url: '#top' },
+  { label: 'About', url: '#about' },
+  { label: 'Services', url: '#services' },
+  { label: 'Our Process', url: '#process' },
+  { label: 'Transport Types', url: '#transport-types' },
+  { label: 'Why Choose Us', url: '#why-us' },
+]
 
 function Header() {
-  const menu = [
-    { label: 'Home', url: '/', hasDropdown: true },
-    { label: 'About', url: '/services', hasDropdown: true },
-    { label: 'Services', url: '/pages', hasDropdown: true },
-    { label: 'Our Process', url: '/blog', hasDropdown: false },
-    { label: 'Contacts', url: '/contacts', hasDropdown: false },
-  ]
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
     <header className="absolute inset-x-0 top-0 z-50 w-full px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 pt-5">
-        <div className="flex items-center gap-3 text-white">
-          {/* <img
-            src="/logo.png"
-            alt="REDERIJ FRISIUM B.V Logo"
-            className="h-11 w-11 object-contain md:h-12 md:w-12"
-          /> */}
-          <div className="flex flex-col justify-center leading-none pl-4">
-            <h2 className="text-xl font-black uppercase tracking-[0.08em] md:text-2xl">
+      <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-3 pt-4 sm:pt-5">
+        <a
+          href="#top"
+          className="flex min-w-0 flex-col justify-center leading-none text-white"
+          onClick={closeMenu}
+        >
+          <span className="truncate text-base font-black uppercase tracking-[0.06em] sm:text-xl md:text-2xl">
+            REDERIJ FRISIUM B.V
+          </span>
+          <span className="mt-1 text-[9px] font-medium uppercase tracking-[0.2em] text-gray-200 sm:text-[10px] md:text-[11px]">
+            Trucking Transportation
+          </span>
+        </a>
+
+        <nav
+          aria-label="Main navigation"
+          className="hidden items-center gap-6 rounded-full border border-white/15 bg-black/35 px-5 py-3 shadow-2xl backdrop-blur-md xl:flex"
+        >
+          {menu.map((item) => (
+            <a
+              key={item.label}
+              href={item.url}
+              className="whitespace-nowrap text-sm font-medium text-white transition-colors hover:text-[#f3c969]"
+            >
+              {item.label}
+            </a>
+          ))}
+          <a
+            href="#quote"
+            className="inline-flex whitespace-nowrap rounded-full bg-[#071f38] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:bg-[#0b2d52]"
+          >
+            Get a Quote
+          </a>
+        </nav>
+
+        <button
+          type="button"
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setIsMenuOpen((open) => !open)}
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-colors hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xl:hidden"
+        >
+          {isMenuOpen ? <FiX className="text-xl" /> : <FiMenu className="text-xl" />}
+        </button>
+      </div>
+
+      <button
+        type="button"
+        aria-label="Close navigation menu"
+        tabIndex={isMenuOpen ? 0 : -1}
+        onClick={closeMenu}
+        className={`fixed inset-0 z-[60] bg-black/60 transition-opacity duration-300 xl:hidden ${
+          isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'
+        }`}
+      />
+
+      <nav
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        aria-hidden={!isMenuOpen}
+        inert={!isMenuOpen}
+        className={`fixed right-0 top-0 z-[70] flex h-dvh w-[min(88vw,400px)] flex-col bg-[#071f38] px-6 pb-8 pt-6 text-white shadow-2xl transition-transform duration-300 ease-out xl:hidden ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="mb-10 flex items-center justify-between gap-4 border-b border-white/15 pb-5">
+          <div className="min-w-0">
+            <p className="truncate text-lg font-black uppercase tracking-wider">
               REDERIJ FRISIUM B.V
-            </h2>
-            <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.28em] text-gray-200 md:text-[11px]">
+            </p>
+            <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-white/65">
               Trucking Transportation
             </p>
           </div>
+          <button
+            type="button"
+            aria-label="Close navigation menu"
+            onClick={closeMenu}
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/20 transition-colors hover:bg-white/10"
+          >
+            <FiX className="text-xl" />
+          </button>
         </div>
 
-        <nav className="hidden items-center gap-7 rounded-full border border-white/15 bg-black/35 px-6 py-3 shadow-2xl backdrop-blur-md lg:flex">
-          <ul className="flex items-center gap-7">
-            {menu.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={item.url}
-                  className="flex items-center gap-1 text-sm font-medium text-white transition-colors duration-200 hover:text-[#f3c969]"
-                >
-                  <span>{item.label}</span>
-                  {item.hasDropdown && <FiChevronDown className="text-xs" />}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-col">
+          {menu.map((item, index) => (
+            <a
+              key={item.label}
+              href={item.url}
+              onClick={closeMenu}
+              className="flex items-center justify-between border-b border-white/10 py-4 text-lg font-medium transition-colors hover:text-[#f3c969]"
+              style={{ transitionDelay: isMenuOpen ? `${index * 35}ms` : '0ms' }}
+            >
+              {item.label}
+              <FiArrowUpRight className="text-sm text-orange-400" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
 
-          <button
-            type="button"
-            aria-label="Search"
-            className="text-white transition-colors duration-200 hover:text-[#f3c969]"
-          >
-            <FiSearch size={16} />
-          </button>
-
-          <button
-            type="button"
-            className="rounded-full bg-[#071f38] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-[#0b2d52]"
-          >
-            Get a Quote
-          </button>
-        </nav>
-      </div>
+        <a
+          href="#quote"
+          onClick={closeMenu}
+          className="mt-auto inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-4 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-orange-600"
+        >
+          Request a Quote
+        </a>
+      </nav>
     </header>
   )
 }

@@ -6,6 +6,7 @@ import Type from "@/components/home/Type";
 import Header from "@/components/ui/Header";
 import WhyUs from "@/components/home/WhyUs";
 import Footer from "@/components/ui/Footer";
+import Cta from "@/components/home/Cta";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Process />
       <Type />
       <WhyUs/>
+      <Cta/>
       <Footer />
     </>
   );
