@@ -8,8 +8,6 @@ const menu = [
   { label: 'About', url: '/about' },
   { label: 'Services', url: '/services' },
   { label: 'Our Process', url: '/process' },
-  { label: 'Transport Types', url: '/#transport-types' },
-  { label: 'Why Choose Us', url: '/#why-us' },
 ]
 
 function Header() {
