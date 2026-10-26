@@ -72,9 +72,9 @@ function Process() {
               </p>
               <a
                 href="/services"
-                className="mt-6 inline-flex items-center gap-3 rounded-full bg-[#071f38] px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/60 transition-colors hover:bg-[#0b2d52]"
+                className="group mt-6 inline-flex items-center gap-3 rounded-full bg-[#071f38] px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/60 transition-all hover:bg-orange-600 hover:scale-105"
               >
-                <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38]">
+                <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38] transition-colors group-hover:bg-orange-600">
                   <FiPhoneCall aria-hidden="true" />
                 </span>
                 Explore Our Services

@@ -30,7 +30,7 @@ function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="/#quote"
-              className="flex items-center gap-2 rounded-lg bg-[#071f38] px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-xl transition-all duration-300 hover:scale-105 border border-white cursor-pointer"
+              className="flex items-center gap-2 rounded-lg bg-[#071f38] px-8 py-4 text-sm font-bold tracking-[0.12em] text-white shadow-xl transition-all duration-300 hover:bg-orange-600 hover:scale-105 border border-white cursor-pointer"
             >
               <span>Get a Quote</span>
               <FiChevronsRight className="text-lg" />

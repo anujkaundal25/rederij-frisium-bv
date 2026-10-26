@@ -224,7 +224,7 @@ export default function ServicesPage() {
                   <div className="mt-8 pt-6 border-t border-slate-100">
                     <Link
                       href={`/contact?service=${encodeURIComponent(service.title)}`}
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-bold text-white transition-all hover:bg-orange-600"
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#071f38] px-5 py-3 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:scale-105"
                     >
                       Book Capacity <FiArrowRight aria-hidden="true" />
                     </Link>
@@ -344,7 +344,7 @@ export default function ServicesPage() {
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 rounded-xl bg-orange-500 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30"
+              className="inline-flex items-center gap-3 rounded-xl bg-[#071f38] px-8 py-4 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30"
             >
               Request a Quote <FiArrowRight aria-hidden="true" />
             </Link>

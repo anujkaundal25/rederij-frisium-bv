@@ -8,14 +8,14 @@ const contacts = [
     label: 'Call us',
     href: 'tel:+919362839070',
     icon: FiPhone,
-    className: 'bg-[#071f38] hover:bg-[#071f38]',
+    className: 'bg-[#071f38] hover:bg-orange-600',
     external: false,
   },
   {
     label: 'Email us',
     href: 'mailto:Daniel@rederijfrisiumbvcom.com',
     icon: FiMail,
-    className: 'bg-[#071f38]',
+    className: 'bg-[#071f38] hover:bg-orange-600',
     external: false,
   },
 ]
@@ -51,7 +51,7 @@ function FloatingContact() {
           type="button"
           onClick={scrollToTop}
           aria-label="Back to top"
-          className="grid h-12 w-12 place-items-center rounded-full bg-[#071f38] text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 hover:bg-[#0c2f54] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 cursor-pointer"
+          className="grid h-12 w-12 place-items-center rounded-full bg-[#071f38] text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 hover:bg-orange-600 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 cursor-pointer"
         >
           <FiArrowUp className="text-2xl sm:text-[26px]" aria-hidden="true" />
         </button>
@@ -68,7 +68,7 @@ function FloatingContact() {
             aria-label={contact.label}
             target={contact.external ? '_blank' : undefined}
             rel={contact.external ? 'noreferrer' : undefined}
-            className={`group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 ease-out hover:w-44 focus-visible:w-44 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 ${contact.className}`}
+            className={`group flex h-12 w-12 items-center justify-end overflow-hidden rounded-full text-white shadow-lg ring-1 ring-white/20 transition-all duration-300 ease-out hover:w-44 hover:scale-105 focus-visible:w-44 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#071f38] sm:h-14 sm:w-14 ${contact.className}`}
           >
             <span className="w-0 overflow-hidden whitespace-nowrap text-sm font-semibold opacity-0 transition-all duration-300 group-hover:mr-3 group-hover:w-auto group-hover:opacity-100 group-focus-visible:mr-3 group-focus-visible:w-auto group-focus-visible:opacity-100 cursor-pointer">
               {contact.label}

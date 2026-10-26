@@ -65,7 +65,7 @@ function AboutUs() {
 
             <a
               href="#services"
-              className="inline-flex w-fit items-center gap-3 rounded-full bg-[#071f38] px-5 py-3 text-sm font-semibold text-white shadow-md transition-colors hover:bg-[#0b2d52]"
+              className="inline-flex w-fit items-center gap-3 rounded-full bg-[#071f38] px-5 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-orange-600 hover:scale-105"
             >
               <span>Explore Our Services</span>
               <HiOutlineArrowUpRight className="text-base" aria-hidden="true" />

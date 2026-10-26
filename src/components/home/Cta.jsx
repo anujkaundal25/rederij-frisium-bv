@@ -153,7 +153,7 @@ function Cta() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-[#071f38] hover:bg-[#0b2d52] text-white font-bold text-sm tracking-wider py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl mt-2"
+              className="w-full bg-[#071f38] hover:bg-orange-600 text-white font-bold text-sm tracking-wider py-4 rounded-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl mt-2"
             >
               <span>Submit Quote Request</span>
               <FiSend className="text-base" />

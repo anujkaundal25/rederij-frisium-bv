@@ -46,7 +46,7 @@ function Header() {
           ))}
           <a
             href="/contact"
-            className="inline-flex whitespace-nowrap rounded-full bg-white px-5 py-3 text-[10px] font-bold tracking-[0.15em] text-[#071f38] transition-colors"
+            className="inline-flex whitespace-nowrap rounded-full bg-[#071f38] px-5 py-3 text-[10px] font-bold tracking-[0.15em] text-white transition-all hover:bg-orange-600 hover:scale-105"
           >
             Contact Us
           </a>
@@ -58,7 +58,7 @@ function Header() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen((open) => !open)}
-          className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/25 bg-black/35 text-white backdrop-blur-md transition-colors hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xl:hidden"
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-white/25 bg-[#071f38] text-white backdrop-blur-md transition-all hover:bg-orange-600 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xl:hidden"
         >
           {isMenuOpen ? <FiX className="text-xl" /> : <FiMenu className="text-xl" />}
         </button>
@@ -96,7 +96,7 @@ function Header() {
             type="button"
             aria-label="Close navigation menu"
             onClick={closeMenu}
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/20 transition-colors hover:bg-white/10"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/20 bg-[#071f38] transition-all hover:bg-orange-600 hover:scale-105"
           >
             <FiX className="text-xl" />
           </button>
@@ -120,7 +120,7 @@ function Header() {
         <a
           href="/contact"
           onClick={closeMenu}
-          className="mt-auto inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-4 text-sm font-bold tracking-wider transition-colors hover:bg-orange-600"
+          className="mt-auto inline-flex items-center justify-center rounded-full bg-[#071f38] px-6 py-4 text-sm font-bold tracking-wider text-white transition-all hover:bg-orange-600 hover:scale-105"
         >
           Contact Us
         </a>

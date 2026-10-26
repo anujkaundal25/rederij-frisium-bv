@@ -105,10 +105,10 @@ function Footer() {
             </p>
             <a
               href="/services"
-              className="mt-6 inline-flex items-center gap-3 rounded-full bg-orange-500 py-2 pl-5 pr-2 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
+              className="group mt-6 inline-flex items-center gap-3 rounded-full bg-[#071f38] py-2 pl-5 pr-2 text-sm font-semibold text-white transition-all hover:bg-orange-600 hover:scale-105"
             >
               Explore Services
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38]">
+              <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38] transition-colors group-hover:bg-orange-600">
                 <FiArrowUpRight aria-hidden="true" />
               </span>
             </a>

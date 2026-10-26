@@ -278,7 +278,7 @@ export default function AboutPage() {
               <div className="mt-10">
                 <Link
                   href="/services"
-                  className="inline-flex items-center gap-2 rounded-xl bg-slate-100 px-6 py-3.5 text-sm font-bold text-[#071f38] transition-all hover:bg-orange-600 hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[#071f38] px-6 py-3.5 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:scale-105"
                 >
                   Explore transportation services <FiArrowRight aria-hidden="true" />
                 </Link>
@@ -307,7 +307,7 @@ export default function AboutPage() {
           <div className="mt-8 lg:mt-0 flex-shrink-0">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 rounded-xl bg-orange-500 px-8 py-4 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30"
+              className="inline-flex items-center gap-3 rounded-xl bg-[#071f38] px-8 py-4 text-sm font-bold text-white transition-all hover:bg-orange-600 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/30"
             >
               Contact Our Team <FiArrowRight aria-hidden="true" />
             </Link>

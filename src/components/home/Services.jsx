@@ -50,15 +50,15 @@ function Services() {
               From a single pallet to a full trailer, our reliable freight
               transportation keeps your cargo moving safely and on schedule.
             </p>
-            <a
+            {/* <a
               href="#service-cards"
-              className="inline-flex items-center gap-3 rounded-full bg-[#071f38] py-2 pl-5 pr-2 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
+              className="group inline-flex items-center gap-3 rounded-full bg-[#071f38] py-2 pl-5 pr-2 text-sm font-semibold text-white transition-all hover:bg-orange-600 hover:scale-105"
             >
               Explore Our Services
-              <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38]">
+              <span className="grid h-9 w-9 place-items-center rounded-full bg-[#071f38] transition-colors group-hover:bg-orange-600">
                 <FiArrowUpRight aria-hidden="true" />
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -99,7 +99,7 @@ function Services() {
           })}
         </div>
         <div className='flex justify-center items-center p-10'>
-          <Link href='/services' className='bg-[#071f38] text-white py-3 w-full lg:w-[20%] rounded-lg text-center'>View All</Link>
+          <Link href='/services' className='bg-[#071f38] text-white py-3 w-full lg:w-[20%] rounded-lg text-center transition-all hover:bg-orange-600 hover:scale-105'>View All</Link>
         </div>
       </div>
     </section>

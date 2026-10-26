@@ -90,15 +90,15 @@ function Type() {
                     {type.description}
                   </p>
 
-                  <div>
+                  {/* <div>
                     <a
                       href="/services"
-                      className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 text-xs font-bold tracking-wider text-white transition-all hover:bg-white hover:text-[#071f38]"
+                      className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-[#071f38] px-5 py-2.5 text-xs font-bold tracking-wider text-white transition-all hover:bg-orange-600 hover:scale-105"
                     >
                       <span>Explore Services</span>
                       <FiArrowUpRight className="text-sm" aria-hidden="true" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
 
               </div>
