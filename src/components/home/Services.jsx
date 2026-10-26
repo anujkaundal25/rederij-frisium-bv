@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { FiArrowUpRight, FiMapPin, FiPackage, FiTruck } from 'react-icons/fi'
 
 const services = [
@@ -96,6 +97,9 @@ function Services() {
               </article>
             )
           })}
+        </div>
+        <div className='flex justify-center items-center p-10'>
+          <Link href='/services' className='bg-[#071f38] text-white py-3 w-full lg:w-[20%] rounded-lg text-center'>View All</Link>
         </div>
       </div>
     </section>
