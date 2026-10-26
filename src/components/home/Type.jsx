@@ -41,7 +41,7 @@ function Type() {
       <div className="mx-auto max-w-[1400px]">
         {/* Section Header */}
         <div className="mb-12 max-w-4xl">
-          <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-[#071f38]">
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3">
             <FiTruck aria-hidden="true" />
             <span>Transport Types</span>
           </div>

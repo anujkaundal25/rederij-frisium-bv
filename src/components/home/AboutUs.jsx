@@ -13,7 +13,7 @@ function AboutUs() {
     <section id="about" className="bg-white px-4 py-16 text-slate-900 sm:px-8 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-[1500px]">
         <div className="mb-10 max-w-3xl sm:mb-12">
-          <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-[#071f38]">
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3">
             <FaTruck className="text-base" aria-hidden="true" />
             <span>About Us</span>
           </div>

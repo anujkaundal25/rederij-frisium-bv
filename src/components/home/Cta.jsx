@@ -36,7 +36,7 @@ function Cta() {
         {/* Left Column: Form Box Container */}
         <div className="lg:col-span-6 bg-white/95 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-white/20">
           <div className="mb-6">
-            <div className="flex items-center gap-2 text-xs font-bold tracking-wider text-orange-500 mb-2">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3">
               <FiTruck className="text-base" />
               <span>Instant Freight Quote</span>
             </div>

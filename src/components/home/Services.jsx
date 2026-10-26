@@ -36,7 +36,7 @@ function Services() {
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-3xl">
-            <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-[#071f38]">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3">
               <FiTruck className="text-base" aria-hidden="true" />
               <span>Our Services</span>
             </div>

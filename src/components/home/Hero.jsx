@@ -12,8 +12,8 @@ function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-[1500px] items-center px-4 pb-12 pt-28 sm:px-8 lg:px-20">
         <div className="max-w-[760px]">
-          <p className="mb-5 text-sm font-semibold tracking-[0.18em] text-[#f3c969] md:text-base">
-            Keeping America&rsquo;s Freight Moving, One Mile at a Time.
+          <p className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-5">
+            Your Freight, Our Commitment.
           </p>
 
           <h1 className="text-4xl font-black leading-[0.9] tracking-[-0.04em] text-white md:text-6xl lg:text-[3rem]">

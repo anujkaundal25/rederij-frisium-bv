@@ -45,7 +45,7 @@ function Process() {
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-[#071f38]">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3">
               <FiTruck className="text-base" aria-hidden="true" />
               <span>Our Process</span>
             </div>

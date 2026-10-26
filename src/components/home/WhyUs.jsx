@@ -38,7 +38,7 @@ function WhyUs() {
           
           {/* Left Column: Headline and Description grouped directly together */}
           <div className="relative z-10 flex flex-col justify-center">
-            <div className="mb-4 flex items-center gap-2 text-sm font-semibold text-[#071f38]">
+            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1.5 text-xs font-bold tracking-wider text-orange-600 border border-orange-200/60 mb-3 w-fit">
               <FiTruck aria-hidden="true" />
               <span>Why Choose Us</span>
             </div>
