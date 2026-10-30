@@ -59,7 +59,7 @@ const contactChannels = [
   },
   {
     title: 'Call Direct',
-    value: '4702446768',
+    value: '+1 470-244-6768',
     subtext: 'Call our team about your shipment',
     href: 'tel:	+1 470-244-6768',
     icon: FiPhone,
