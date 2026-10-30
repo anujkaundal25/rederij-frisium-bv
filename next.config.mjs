@@ -1,7 +1,10 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,12 +12,13 @@ const nextConfig = {
       },
     ],
   },
+
   experimental: {
     agentFeedback: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+
   reactCompiler: true,
+
   turbopack: {
     rules: {
       "*.css": {
