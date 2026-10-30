@@ -6,14 +6,14 @@ import { FiMail, FiPhone, FiArrowUp } from 'react-icons/fi'
 const contacts = [
   {
     label: 'Call us',
-    href: 'tel:+919362839070',
+    href: 'tel:	+1 470-244-6768',
     icon: FiPhone,
     className: 'bg-[#071f38] hover:bg-orange-600',
     external: false,
   },
   {
     label: 'Email us',
-    href: 'mailto:Daniel@rederijfrisiumbvcom.com',
+    href: 'mailto:brian@BARTLETTHOLDINGS.org',
     icon: FiMail,
     className: 'bg-[#071f38] hover:bg-orange-600',
     external: false,
