@@ -17,7 +17,7 @@ import {
 import InnerPageLayout from '@/components/ui/InnerPageLayout'
 
 export const metadata = {
-  title: 'Our Process | Rederij Frisium B.V.',
+  title: 'Our Process | Brian Bartlett',
   description:
     'Learn how we coordinate freight quotes, pickups, tracking, and delivery.',
 }

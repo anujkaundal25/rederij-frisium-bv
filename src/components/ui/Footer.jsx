@@ -40,10 +40,10 @@ function Footer() {
             <a
               href="/"
               className="inline-flex items-center gap-3"
-              aria-label="Rederij Frisium home"
+              aria-label="Brian Bartlett home"
             >
               <span className="text-xl font-black leading-tight tracking-[0.08em] sm:text-2xl">
-                Rederij Frisium B.V
+                BRIAN BARTLETT
                 <span className="mt-1 block text-[10px] font-medium tracking-[0.24em] text-white/70">
                   Trucking Transportation
                 </span>
@@ -142,23 +142,23 @@ function Footer() {
 
         {/* <div className="grid gap-4 border-t border-white/15 py-7 sm:grid-cols-2">
           <a
-            href="mailto:Daniel@rederijfrisiumbvcom.com"
+            href="mailto:brian@BARTLETTHOLDINGS.org"
             className="flex min-w-0 items-center gap-3 text-sm text-white/75 transition-colors hover:text-orange-400"
           >
             <FiMail className="shrink-0 text-orange-500" aria-hidden="true" />
-            <span className="break-all">Daniel@rederijfrisiumbvcom.com</span>
+            <span className="break-all">brian@BARTLETTHOLDINGS.org</span>
           </a>
           <a
-            href="tel:9362839070"
+            href="tel:+14702446768"
             className="flex items-center gap-3 text-sm text-white/75 transition-colors hover:text-orange-400"
           >
             <FiPhone className="shrink-0 text-orange-500" aria-hidden="true" />
-            <span>936 283 9070</span>
+            <span>+1 470-244-6768</span>
           </a>
         </div> */}
 
         <div className="flex justify-center items-center gap-3 border-t border-white/15 pt-5 text-sm text-white/65 text-center">
-          <p>© 2026 Rederij Frisium B.V. All rights reserved.</p>
+          <p>© 2026 Brian Bartlett. All rights reserved.</p>
         </div>
       </div>
     </footer>

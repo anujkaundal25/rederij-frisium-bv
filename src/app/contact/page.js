@@ -16,8 +16,8 @@ import {
 import InnerPageLayout from '@/components/ui/InnerPageLayout'
 
 export const metadata = {
-  title: 'Contact | Rederij Frisium B.V.',
-  description: 'Get ready to plan a freight shipment with Rederij Frisium.',
+  title: 'Contact | Brian Bartlett',
+  description: 'Get ready to plan a freight shipment with Brian Bartlett.',
 }
 
 // Unsplash image sources (whitelisted in next.config.mjs)
@@ -61,7 +61,7 @@ const contactChannels = [
     title: 'Call Direct',
     value: '+1 470-244-6768',
     subtext: 'Call our team about your shipment',
-    href: 'tel:	+1 470-244-6768',
+    href: 'tel:+14702446768',
     icon: FiPhone,
     accent: 'border-slate-200 bg-white',
     iconBg: 'bg-slate-900 text-orange-400',

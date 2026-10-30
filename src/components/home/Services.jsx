@@ -24,7 +24,7 @@ const services = [
     description:
       'Flexible regional routes and scheduled deliveries that keep your supply chain moving on time.',
     image:
-      'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=85',
+      '/service1.webp',
     imageAlt: 'Truck transporting freight along a road',
     icon: FiMapPin,
   },

@@ -24,7 +24,7 @@ function Header() {
           onClick={closeMenu}
         >
           <span className="truncate text-base font-black tracking-[0.06em] sm:text-xl md:text-2xl">
-            Rederij Frisium B.V.
+            BRIAN BARTLETT
           </span>
           <span className="mt-1 text-[9px] font-medium tracking-[0.2em] text-gray-200 sm:text-[10px] md:text-[11px]">
             Trucking Transportation
@@ -86,7 +86,7 @@ function Header() {
         <div className="mb-10 flex items-center justify-between gap-4 border-b border-white/15 pb-5">
           <div className="min-w-0">
             <p className="truncate text-lg font-black tracking-wider">
-              Rederij Frisium B.V.
+              BRIAN BARTLETT
             </p>
             <p className="mt-1 text-[10px] tracking-[0.2em] text-white/65">
               Trucking Transportation

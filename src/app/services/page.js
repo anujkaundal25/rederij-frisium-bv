@@ -19,9 +19,9 @@ import {
 import InnerPageLayout from '@/components/ui/InnerPageLayout'
 
 export const metadata = {
-  title: 'Freight Services | Rederij Frisium B.V.',
+  title: 'Freight Services | Brian Bartlett',
   description:
-    'Explore trucking and freight transportation options from Rederij Frisium.',
+    'Explore trucking and freight transportation options from Brian Bartlett.',
 }
 
 const IMAGES = {

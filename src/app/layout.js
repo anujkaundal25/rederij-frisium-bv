@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "Rederij Frisium B.V",
-  description: "Trucking Transportation business",
+  title: "BRIAN BARTLETT",
+  description: "Brian Bartlett provides dependable freight transportation.",
 };
 
 export default function RootLayout({ children }) {

@@ -6,7 +6,7 @@ import { FiMail, FiPhone, FiArrowUp } from 'react-icons/fi'
 const contacts = [
   {
     label: 'Call us',
-    href: 'tel:	+1 470-244-6768',
+    href: 'tel:+14702446768',
     icon: FiPhone,
     className: 'bg-[#071f38] hover:bg-orange-600',
     external: false,

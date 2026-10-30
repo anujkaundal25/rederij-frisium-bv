@@ -27,7 +27,7 @@ const transportTypes = [
     description:
       'Move building materials, machinery, and other oversized cargo with flexible open-deck transportation for challenging loads.',
     image:
-      'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85',
+      '/type1.webp',
     imageAlt: 'Flatbed truck transporting freight',
   },
 ]

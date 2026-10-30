@@ -15,9 +15,9 @@ import {
 import InnerPageLayout from '@/components/ui/InnerPageLayout'
 
 export const metadata = {
-  title: 'About Us | Rederij Frisium B.V.',
+  title: 'About Us | Brian Bartlett',
   description:
-    'Learn about Rederij Frisium and our approach to dependable freight transportation.',
+    'Learn about Brian Bartlett and our approach to dependable freight transportation.',
 }
 
 // Reliable, active Unsplash images for freight logistics
@@ -79,7 +79,7 @@ const executionSteps = [
 export default function AboutPage() {
   return (
     <InnerPageLayout
-      eyebrow="About Rederij Frisium"
+      eyebrow="About Brian Bartlett"
       title="Built Around the Journey of Your Freight"
       description="We coordinate trucking transportation with one goal: make it easier for businesses to move goods with confidence, from the first conversation to the final handoff."
       image={IMAGES.hero}
@@ -105,7 +105,7 @@ export default function AboutPage() {
 
               <p className="mt-6 text-lg leading-relaxed text-slate-600">
                 It is inventory a business depends on, a delivery someone is
-                waiting for, and a promise that needs to be kept. Rederij Frisium
+                waiting for, and a promise that needs to be kept. Brian Bartlett
                 focuses on dependable trucking and practical coordination so each
                 shipment has a clear path forward.
               </p>
