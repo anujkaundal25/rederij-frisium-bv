@@ -70,7 +70,7 @@ const contactChannels = [
     title: 'Headquarters',
     value: 'BRIAN BARTLETT HOLDINGS',
     subtext: '106 Hampton Square Dr Lawrenceville Ga 30046',
-    href: 'https://www.google.com/maps/search/?api=1&query=Nieuwe+Vissershaven+12%2C+8861+NX+Harlingen%2C+Netherlands',
+    href: 'https://www.google.com/maps/search/?api=1&query=106+Hampton+Square+Dr,+Lawrenceville,+GA+30046&utm_source=chatgpt.com',
     icon: FiMapPin,
     accent: 'border-slate-200 bg-white',
     iconBg: 'bg-slate-900 text-orange-400',
